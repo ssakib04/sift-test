@@ -1,4 +1,4 @@
-# `<PROJECT_NAME>`
+# `Sift`
 
 > **Positioning:** `<one line: what it does, for whom>`
 
