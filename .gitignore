@@ -1,0 +1,71 @@
+# --- Secrets & environment (N7) ---
+.env
+.env.*
+!.env.example
+secrets/
+gcp-credentials*.json
+firebase-adminsdk*.json
+*.pem
+*.key
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Node / frontend ---
+node_modules/
+dist/
+build/
+.vite/
+
+# --- Candidate personal data (N14) ---
+# Provided CVs must never be committed; synthetic CVs are allowed.
+test_data/*
+!test_data/synthetic/
+!test_data/README.md
+!test_data/sample_cvs/
+test_data/sample_cvs/*
+!test_data/sample_cvs/.gitkeep
+uploads/
+exports/
+transcripts/
+
+# --- Raw media (N16: zero raw media retention) ---
+*.wav
+*.mp3
+*.mp4
+*.webm
+*.ogg
+*.flac
+*.m4a
+*.mkv
+*.avi
+*.pcm
+
+# --- Databases & dumps ---
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.dump
+pgdata/
+chroma_data/
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+logs/
